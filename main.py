@@ -11,8 +11,3 @@ main.config['Images'] = images
 def Main():
     Image_name1 = os.path.join(main.config['Images'], 'logo.jpg')
     return render_template('mainpage.html', I1 = Image_name1)
-    
-#cd  C:\Users\mattk\Documents\GitHub\LawFirmSite-Matthew\VE\Scripts
-#activate
-#set FLASK_APP=main.py
-#flask run
