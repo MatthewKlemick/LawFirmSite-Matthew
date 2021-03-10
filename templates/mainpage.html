@@ -8,8 +8,14 @@
     width: 50%;
     margin-top: 6px;
     }
-    body{
-    background-color:white;
+    div.Services {
+    margin: 0.5%;
+    border: 1px solid black;
+    float: left;
+    width: 22.7%;
+    padding: 0.5%;
+    text-align: center;
+    background-color: lightblue;
     }
     header{
     outline: black solid 3px;
@@ -17,12 +23,41 @@
     color: white;
     text-align: center;  
     }
+    body{
+    background-color:white;
+    }
     </style>
     <body>
-    <header>
-        <img src="{{ I1 }}" class="logo" alt="our logo" style="width:50px;height:50px;">
-        <h3>lucksore legal</h3>
-    </header>
-        
+        <header>
+            <img src="{{ I1 }}" class="logo" alt="our logo" style="width:50px;height:50px;">
+            <h3>Lucksore legal</h3>
+        </header>
+
+        <div style="width: 100%;">
+
+            <div class="Services">
+                Wills
+                <br>
+                Description: did someone just die and your not in the will we can help with that    
+            </div>
+    
+            <div class="Services">
+                Family law
+                <br>
+                Description: what a divorce and want to come out richer then your spoce we can help      
+            </div>
+    
+            <div class="Services">
+                Commercial law
+                <br>
+                Description: have a employee you need to fire we can get you a lawyer to help you get rid of them     
+            </div>
+            
+            <div class="Services">
+                Property law
+                <br>
+                Description: had some property stolen by a someone we can help you fight it in court  
+            </div>
+        </div>
     </body>
 </html>
