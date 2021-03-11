@@ -9,7 +9,8 @@ main.config['Images'] = images
 
 @main.route('/')
 def Main():
-    Image_name1 = os.path.join(main.config['Images'], 'logo.jpg')
-    Image_name2 = os.path.join(main.config['Images'], 'business-woman.jpg')
-    Image_name3 = os.path.join(main.config['Images'], 'business-man.jpg')
-    return render_template('mainpage.html', I1 = Image_name1, I2 = Image_name2, I3 = Image_name3)
+    i1 = os.path.join(main.config['Images'], 'logo.jpg')
+    i2 = os.path.join(main.config['Images'], 'business-woman.jpg')
+    i3 = os.path.join(main.config['Images'], 'business-man.jpg')
+    i4 = os.path.join(main.config['Images'], 'space.jpg')
+    return render_template('mainpage.html', I1 = i1, I2 = i2, I3 = i3, I4 = i4 )

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     <style>
+    html {
+    position: relative;
+    min-height: 100%;
+    }
     .logo{
     display: block;
     margin-left: auto;
@@ -51,64 +55,95 @@
     margin-top: 5%;
     margin-bottom: 5%;
     }
+    footer{
+    background-color: cornflowerblue;
+    border-top: 1px solid black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    }
+    .space {
+    min-height: 100%;
+    position:relative;
+    }
+    .finalE{
+    height: 200px;
+    }
     </style>
-    <body>
-        <header>
-            <img src="{{ I1 }}" class="logo" alt="our logo">
-            <h3>Lucksore Legal</h3>
-        </header>
+    <div class="space">
+        <body>
+            <header>
+                <img src="{{ I1 }}" class="logo" alt="our logo">
+                <h3>Lucksore Legal</h3>
+            </header>
 
-        <div class="division">
+            <div class="division">
 
-            <h1 class="text">legal Services</h1>
+                <h1 class="text">legal Services</h1>
 
-            <div class="Services">
-                Wills
-                <br>
-                <br>
-                Did someone just die and you're not in the will - we can help with that    
-            </div>
-    
-            <div class="Services">
-                Family Law
-                <br>
-                <br>
-                Want a divorce and want to come out richer than your spouse - we can help      
-            </div>
-    
-            <div class="Services">
-                Commercial Law
-                <br>
-                <br>
-                Do you have a employee you need to fire? We can get you a lawyer to help you get rid of them     
-            </div>
-            
-            <div class="Services">
-                Property Law
-                <br>
-                <br>
-                Had some property stolen by a someone - we can help you fight it in court  
-            </div>
-        </div>
-        <div class="division">
-            
-            <h1 class="text">About Us</h1>
-
-            <div class="About">
-                <img src="{{ I2 }}" class="profilep" alt="our ceo">
-                <div class="text">
-                    <h2>CEO</h2>
-                    <h3>Jenifer Lancaster</h3>
+                <div class="Services">
+                    Wills
+                    <br>
+                    <br>
+                    Did someone just die and you're not in the will - we can help with that    
+                </div>
+        
+                <div class="Services">
+                    Family Law
+                    <br>
+                    <br>
+                    Want a divorce and want to come out richer than your spouse - we can help      
+                </div>
+        
+                <div class="Services">
+                    Commercial Law
+                    <br>
+                    <br>
+                    Do you have a employee you need to fire? We can get you a lawyer to help you get rid of them     
+                </div>
+                
+                <div class="Services">
+                    Property Law
+                    <br>
+                    <br>
+                    Had some property stolen by a someone - we can help you fight it in court  
                 </div>
             </div>
-    
-            <div class="About">
-                <img src="{{ I3 }}" class="profilep" alt="our best employee">
-                <div class="text">
-                    <h2>Employee Of The Month</h2>
-                    <h3>Jon Goodall</h3>
+            <div class="division">
+                
+                <h1 class="text">About Us</h1>
+
+                <div class="About">
+                    <img src="{{ I2 }}" class="profilep" alt="our ceo">
+                    <div class="text">
+                        <h2>CEO</h2>
+                        <h3>Jenifer Lancaster</h3>
+                    </div>
+                </div>
+        
+                <div class="About">
+                    <img src="{{ I3 }}" class="profilep" alt="our best employee">
+                    <div class="text">
+                        <h2>Employee Of The Month</h2>
+                        <h3>Jon Goodall</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-    </body>
+            <img src="{{ I4 }}" class="finalE" alt="error">
+            <div class="division">
+                <footer>
+                    <div class="text">
+                        contact number: +64 9 620 0191
+                        <br>
+                        Email address: info@LucksoreLegal.co.nz
+                        <br>
+                        Physical address: 4a Owairaka Avenue, Mount Albert, Auckland, NZ 1025
+                        </div>
+                </footer>
+            </div>
+        </body>
+    </div>
 </html>
