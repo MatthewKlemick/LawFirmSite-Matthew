@@ -72,6 +72,19 @@
     .finalE{
     height: 200px;
     }
+    .left{
+    text-align: left; 
+    }
+    form{
+    margin: 0;    
+    margin-left: 65%;
+    }
+    .A{
+    margin: 130px;
+    }
+    .B{
+    margin: 20px;
+    }
     </style>
     <div class="space">
         <body>
@@ -135,13 +148,22 @@
             <img src="{{ I4 }}" class="finalE" alt="error">
             <div class="division">
                 <footer>
-                    <div class="text">
+                    <div class="left">
                         contact number: +64 9 620 0191
                         <br>
                         Email address: info@LucksoreLegal.co.nz
                         <br>
                         Physical address: 4a Owairaka Avenue, Mount Albert, Auckland, NZ 1025
-                        </div>
+                    </div>
+                    <form>
+                        <label for="name">Name:</label>
+                        <label class="A" for="Email">Email:</label>
+                        <label class="B" for="conplant">Conplant:</label><br>
+                        <input type="text" id="name" name="name">
+                        <input type="text" id="Email" name="Email">
+                        <input type="text" id="Conplant" name="Conplant" size="20">
+                        <input type="submit" value="Submit">
+                    </form>
                 </footer>
             </div>
         </body>
